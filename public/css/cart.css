@@ -1,0 +1,110 @@
+@font-face{
+    font-family: yellowtail;
+    src: url('/fonts/Yellowtail-Regular.ttf');
+}
+@font-face{
+    font-family: abel;
+    src: url('/fonts/Abel-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    /*ffcdb2
+    ffb4a2
+    e5989b
+    b5838d
+    6d6875
+    */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6.7fr;
+    grid-template-areas: 
+        "header     header"
+        "main       main";
+    height: 100vh;
+    margin: 0em;
+}
+
+header{
+    grid-area: header;
+    font-family: abel;
+    background: #181818
+}
+
+.logo{
+    position: absolute;
+    left: 3%;
+    bottom: 88%;
+    font-family: abel;
+    text-decoration: underline;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 30pt;
+    padding: 15px;
+}
+
+.login{
+    position: absolute;
+    color: #ffffff;
+    font-size: 15pt;
+    left: 91%;
+    top: 4.69%;
+}
+
+.login:hover{
+    text-decoration: underline;
+}
+
+main{
+    grid-area: main;
+    font-family: abel;
+    margin-top: 8%;
+}
+
+tr,td,th{
+    font-size: 15pt;
+}
+
+th{
+    text-align: center;
+    background-color: #181818;
+    color: #ffffff;
+}
+
+table{
+    border-spacing: 0px;
+}
+
+#yellow{
+    background-color: rgb(22, 10, 126);
+}
+
+#yellow:hover{
+    text-decoration: underline;
+}
+
+.cart_nav{
+    position: absolute;
+    top: 19%;
+    left: 23.5%;
+}
+
+.katalog_nav{
+    position: absolute;
+    top: 19%;
+    left: 16%;
+}
+
+.katalog_nav:hover{
+    text-decoration: underline;
+}
+
+.noproduk{
+    position: absolute;
+    left: 16%;
+}
+

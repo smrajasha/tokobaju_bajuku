@@ -1,0 +1,55 @@
+@font-face{
+    font-family: yellowtail;
+    src: url('/fonts/Yellowtail-Regular.ttf');
+}
+@font-face{
+    font-family: abel;
+    src: url('/fonts/Abel-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    /*ffcdb2
+    ffb4a2
+    e5989b
+    b5838d
+    6d6875
+    */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.89fr 6fr;
+    grid-template-areas: 
+        "header     header"
+        "main       main";
+    height: 100vh;
+    margin: 0em;
+}
+
+header{
+    grid-area: header;
+    font-family: abel;
+    background: #181818
+}
+
+.logo{
+    position: absolute;
+    left: 50px;
+    font-family: abel;
+    text-decoration: underline;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 30pt;
+    padding: 15px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+main{
+    grid-area: main;
+    font-family: abel;
+}
